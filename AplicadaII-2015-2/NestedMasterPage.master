@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="NestedMasterPage.master.cs" Inherits="AplicadaII_2015_2.NestedMasterPage" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+      <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+     <nav class="navbar navbar-inverse" role="navigation">
+            <ul class="nav navbar-nav navbar-left">
+
+                <li><a href="../Default.aspx">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servicios <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Analisis</a></li>
+
+                        <li><a href="#">Diseño</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Programacion</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="../ControlPanel/AjaxTest.aspx">Control Panel</a></li>
+                
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    <asp:ContentPlaceHolder ID="BodyContentPlaceHolder" runat="server">
+        
+        </asp:ContentPlaceHolder>
+</asp:Content>
