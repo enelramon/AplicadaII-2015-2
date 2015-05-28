@@ -18,7 +18,26 @@
         }
 
         function OnSuccess(response) {
-            alert(response.d);
+            toastr["error"]("Ariel se quemara en  A", "lalalalal");
+
+            //toastr.options = {
+            //    "closeButton": false,
+            //    "debug": false,
+            //    "newestOnTop": false,
+            //    "progressBar": false,
+            //    "positionClass": "toast-top-right",
+            //    "preventDuplicates": false,
+            //    "onclick": null,
+            //    "showDuration": "300",
+            //    "hideDuration": "1000",
+            //    "timeOut": "5000",
+            //    "extendedTimeOut": "1000",
+            //    "showEasing": "swing",
+            //    "hideEasing": "linear",
+            //    "showMethod": "fadeIn",
+            //    "hideMethod": "fadeOut"
+            //}
+
         }
     </script>
 
@@ -34,10 +53,11 @@
     <br />
 
     <div>
-        Nombre :        <asp:TextBox ID="txtUserName" runat="server"></asp:TextBox>
+        Nombre :       
+        <asp:TextBox ID="txtUserName" runat="server"></asp:TextBox>
 
         <input id="btnGetTime" onclick="ShowCurrentTime()" type="button" value="Fecha Actual" />
     </div>
 
-     
+
 </asp:Content>

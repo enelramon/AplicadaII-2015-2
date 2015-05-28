@@ -11,13 +11,15 @@ namespace AplicadaII_2015_2.ControlPanel
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //toastr["error"]("Ariel se quemara en  A", "lalalalal");
+            Page.ClientScript.RegisterStartupScript(this.GetType(), "toastr_message", "toastr.error('There was an error', 'Error')", true);﻿
         }
 
         [System.Web.Services.WebMethod]
         public static string GetCurrentTime(string name)
         {
-            return "Hola " + name +  " Fecha: "  + DateTime.Now.ToString();
+
+            return "Hola " + name + " Fecha: " + DateTime.Now.ToString();
         }
 
     }

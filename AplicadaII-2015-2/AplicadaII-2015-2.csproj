@@ -60,6 +60,7 @@
     <Content Include="css\bootstrap-responsive.min.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\toastr.min.css" />
+    <Content Include="Global.asax" />
     <Content Include="scripts\toastr.min.js" />
     <Content Include="Img\ajax.png" />
     <Content Include="Img\angular.png" />
@@ -92,6 +93,9 @@
     </Compile>
     <Compile Include="EjemploValidaciones.aspx.designer.cs">
       <DependentUpon>EjemploValidaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="LogOn.aspx.cs">
       <DependentUpon>LogOn.aspx</DependentUpon>
