@@ -29,6 +29,12 @@ namespace BLL
             return true;
         }
 
+        public bool Modificar()
+        { 
+
+        }
+
+
         public void AgregarTelefono(int tipo, String telefono)
         {
 
