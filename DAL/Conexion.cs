@@ -9,7 +9,7 @@ namespace DAL
 {
     public class Conexion
     {
-        SqlConnection con = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=ControlPacientesDB;Integrated Security=True");
+        SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString);
         /// <summary>
         /// para ejecutar todos los codigos
         /// </summary>
