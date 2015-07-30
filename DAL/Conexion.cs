@@ -10,12 +10,13 @@ namespace DAL
     public class Conexion
     {
         SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString);
+
         /// <summary>
         /// para ejecutar todos los codigos
         /// </summary>
         /// <param name="Codigo"></param>
         /// <returns></returns>
-        public  bool EjecutarDB(string Codigo)
+        public bool EjecutarDB(string Codigo)
         {
             bool mensaje = false;
             SqlCommand cmd = new SqlCommand();
@@ -23,11 +24,11 @@ namespace DAL
             try
             {
                 con.Open(); // abrimos la conexion
-                
+
                 cmd.Connection = con; //asignamos la conexion
                 cmd.CommandText = Codigo;     //asignamos el comando
                 cmd.ExecuteNonQuery(); // ejecutamos el comando
-
+                mensaje = true;
             }
             catch (Exception)
             {
@@ -35,7 +36,7 @@ namespace DAL
             }
             finally
             {
-                mensaje = true;
+
                 con.Close(); //cerramos la conexion
                 // MessageBox.Show("Conexion cerrada");
 
@@ -71,8 +72,8 @@ namespace DAL
             }
             return dt;
         }
-    
 
-      
+
+
     }
 }

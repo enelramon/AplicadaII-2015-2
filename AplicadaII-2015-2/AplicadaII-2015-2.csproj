@@ -57,10 +57,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Consultas\cCategorias.aspx" />
     <Content Include="css\bootstrap-responsive.min.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\toastr.min.css" />
     <Content Include="Global.asax" />
+    <Content Include="Img\beer.png" />
     <Content Include="rPersonas.aspx" />
     <Content Include="scripts\toastr.min.js" />
     <Content Include="Img\ajax.png" />
@@ -74,6 +76,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Consultas\cCategorias.aspx.cs">
+      <DependentUpon>cCategorias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\cCategorias.aspx.designer.cs">
+      <DependentUpon>cCategorias.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ControlPanel\AjaxTest.aspx.cs">
       <DependentUpon>AjaxTest.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -175,6 +184,12 @@
       <Project>{735656ae-3461-45ac-8e58-ab8aab229705}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\EjemploValidaciones.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\EjemploValidaciones.aspx.en-US.resx" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
