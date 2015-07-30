@@ -29,6 +29,7 @@ namespace AplicadaII_2015_2.Consultas
             Label Id = (Label )item.FindControl("CodigoLabel");
 
            ErrorLabel .Text = "entro: "+ Id.Text ;
+            //categoria.Agregaritem(id.text);
         }
 
 
